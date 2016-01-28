@@ -1,0 +1,17 @@
+/.bundle/
+
+/**/*.log
+/log/*
+!/log/.keep
+
+/tmp/
+/pkg/
+
+/coverage/
+/spec/reports/
+
+/doc/
+/.yardoc
+/_yardoc/
+
+.DS_Store

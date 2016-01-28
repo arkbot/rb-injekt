@@ -1,0 +1,2 @@
+# arkbot/rb-injekt
+[![Build Status](https://travis-ci.org/arkbot/rb-injekt.svg)](https://travis-ci.org/arkbot/rb-injekt) [![Code Climate](https://codeclimate.com/github/arkbot/rb-injekt/badges/gpa.svg)](https://codeclimate.com/github/arkbot/rb-injekt) [![Coverage Status](https://coveralls.io/repos/github/arkbot/rb-injekt/badge.svg?branch=master)](https://coveralls.io/github/arkbot/rb-injekt?branch=master) [![Dependency Status](https://gemnasium.com/arkbot/rb-injekt.svg)](https://gemnasium.com/arkbot/rb-injekt)

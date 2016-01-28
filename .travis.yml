@@ -1,0 +1,31 @@
+language: ruby
+
+bundler_args: --with=development --jobs=3 --retry=3 --verbose
+
+rvm:
+  - 2.2.4
+
+sudo: false
+
+cache:
+  bundler: true
+
+git:
+  depth: 5
+
+notifications:
+  email: false
+
+addons:
+  code_climate:
+    repo_token: 1c53482a7a3d3c1e61f82c2de9852116b169c5eba0cf8615e8828c08d08b2d19
+
+script: bin/travis-runner
+
+matrix:
+  fast_finish: true
+
+env:
+  matrix:
+    - RAKE_TASK=linters:all
+    - RSPEC_SUITE=spec/

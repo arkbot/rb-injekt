@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set +xe
+
+if [ -n "$RAKE_TASK" ]; then
+  set -xev
+  bundle install
+	bundle exec rake $RAKE_TASK
+elif [ -n "$RSPEC_SUITE" ]; then
+  set -xev
+  bundle install
+  bundle exec rspec $RSPEC_SUITE
+fi
