@@ -16,6 +16,9 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     ast (2.2.0)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
+    byebug (8.2.1)
     cleanroom (1.0.0)
     codeclimate-test-reporter (0.4.8)
       simplecov (>= 0.7.1, < 1.0.0)
@@ -26,6 +29,7 @@ GEM
       simplecov (>= 0.7)
       term-ansicolor
       thor
+    debug_inspector (0.0.2)
     deject (0.2.3)
     diff-lcs (1.2.5)
     docile (1.1.5)
@@ -44,6 +48,12 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry-byebug (3.3.0)
+      byebug (~> 8.0)
+      pry (~> 0.10)
+    pry-stack_explorer (0.4.9.2)
+      binding_of_caller (>= 0.7)
+      pry (>= 0.9.11)
     rainbow (2.0.0)
     rake (10.5.0)
     rest-client (1.7.2)
@@ -92,9 +102,12 @@ DEPENDENCIES
   fivemat
   injekt!
   pry
+  pry-byebug
+  pry-stack_explorer
   rake
   rspec
   rubocop
+  simplecov
   yard
 
 BUNDLED WITH

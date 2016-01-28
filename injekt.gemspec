@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.homepage      = 'https://github.com/arkbot/rb-injekt'
   s.summary       = 'A tiny dependency injection and context isolation library for Ruby.'
   s.description   = 'A tiny dependency injection and context isolation library for Ruby.'
-  s.license       = 'MIT'
+  s.licenses      = ['MIT']
 
   s.files         = `git ls-files -z`.split("\x0").tap { |files| files.delete('Gemfile.lock') }
 
@@ -31,5 +31,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'rubocop'
+  s.add_development_dependency 'simplecov'
   s.add_development_dependency 'yard'
 end

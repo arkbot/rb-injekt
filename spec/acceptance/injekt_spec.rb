@@ -6,4 +6,8 @@ describe Injekt do
   it 'has a version number' do
     expect(Injekt::VERSION).not_to be nil
   end
+
+  it 'has coverage' do
+    expect { SimpleCov }.not_to raise_error
+  end
 end

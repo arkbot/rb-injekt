@@ -1,12 +1,21 @@
-require 'rubocop/rake_task'
+begin
+  require 'rubocop/rake_task'
 
-RuboCop::RakeTask.new(:rubocop) do |task|
-  task.options = ['-c', '.rubocop.yml']
-  task.fail_on_error = true
+  RuboCop::RakeTask.new(:rubocop) do |task|
+    task.options = ['-c', '.rubocop.yml']
+    task.fail_on_error = true
+  end
+rescue LoadError, NameError
+  nil
 end
 
-require 'rspec/core/rake_task'
-RSpec::Core::RakeTask.new(:spec)
+begin
+  require 'rspec/core/rake_task'
+
+  RSpec::Core::RakeTask.new(:spec)
+rescue LoadError, NameError
+  nil
+end
 
 def run_linter(linter_task, linter_files = nil)
   if linter_files.nil? || linter_files.try(:any?)
